@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 
 // Define the MongoDB Connection URL
-const mongoURL = 'mongodb://localhost:27017/Resturent'; // Replace with your Database Name
-
+//const mongoURL = 'mongodb://localhost:27017/Resturent'; // Replace with your Database Name
+const mongoURL = 'mongodb+srv://naeemakram:naeemakram@restaurant.svvkbxg.mongodb.net/'; //Incorrect Username and Password Due to Security reasons
 // SetUp the mongoDB connection
 mongoose.connect(mongoURL);
 
