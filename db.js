@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
-
+require('dotenv').config();
 // Define the MongoDB Connection URL
-//const mongoURL = 'mongodb://localhost:27017/Resturent'; // Replace with your Database Name
-const mongoURL = 'mongodb+srv://naeemakram:naeemakram@restaurant.svvkbxg.mongodb.net/'; //Incorrect Username and Password Due to Security reasons
+//const mongoURL = process.env.mongoURL_LOCAL; 
+const mongoURL = process.env.mongoURL;
 // SetUp the mongoDB connection
 mongoose.connect(mongoURL);
 
